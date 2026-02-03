@@ -1,0 +1,120 @@
+# Configuration des styles pour l'export DOCX
+# Style professionnel classique pour documents administratifs
+
+metadata:
+  title: "Chaton 🐾 - Réponse"
+  author: "Chaton"
+  subject: "Réponse générée par IA"
+
+# Style par défaut pour les paragraphes normaux
+normal:
+  font:
+    name: "Calibri"
+    size: 11.0
+    color: "#000000"
+  paragraph:
+    alignment: "JUSTIFY"
+    line_spacing: 1.08
+    space_after: 8.0
+
+# Styles des titres (Heading 1, 2, 3, 4)
+headings:
+  "1":
+    font:
+      name: "Calibri Light"
+      size: 16.0
+      bold: false
+      color: "#2E75B5"  # Bleu professionnel
+    paragraph:
+      space_before: 12.0
+      space_after: 0.0
+      alignment: "LEFT"
+
+  "2":
+    font:
+      name: "Calibri Light"
+      size: 13.0
+      bold: false
+      color: "#2E75B5"  # Bleu professionnel
+    paragraph:
+      space_before: 2.0
+      space_after: 0.0
+      alignment: "LEFT"
+
+  "3":
+    font:
+      name: "Calibri Light"
+      size: 12.0
+      bold: false
+      color: "#1F4D78"  # Bleu foncé
+    paragraph:
+      space_before: 2.0
+      space_after: 0.0
+      alignment: "LEFT"
+
+  "4":
+    font:
+      name: "Calibri Light"
+      size: 11.0
+      bold: false
+      italic: true
+      color: "#2E75B5"  # Bleu professionnel
+    paragraph:
+      space_before: 2.0
+      space_after: 0.0
+      alignment: "LEFT"
+
+# Styles des listes
+lists:
+  bullet:
+    font:
+      name: "Calibri"
+      size: 11.0
+      color: "#000000"
+    paragraph:
+      left_indent: 0.5
+      space_after: 8.0
+      alignment: "JUSTIFY"
+      line_spacing: 1.08
+
+  number:
+    font:
+      name: "Calibri"
+      size: 11.0
+      color: "#000000"
+    paragraph:
+      left_indent: 0.5
+      space_after: 8.0
+      alignment: "JUSTIFY"
+      line_spacing: 1.08
+
+# Style des tableaux
+tables:
+  style_name: "Table Grid"  # Style sobre, professionnel
+  cell:
+    font:
+      name: "Calibri"
+      size: 11.0
+      color: "#000000"
+    paragraph:
+      alignment: "LEFT"
+
+# Style des blocs de code
+code_block:
+  font:
+    name: "Consolas"
+    size: 9.0
+    color: "#000000"
+  paragraph:
+    left_indent: 0.5
+    space_before: 8.0
+    space_after: 8.0
+    alignment: "LEFT"
+    line_spacing: 1.0
+
+# Style du code inline (entre backticks)
+code_inline:
+  font:
+    name: "Consolas"
+    size: 10.0
+    color: "#C7254E"  # Rouge/rose pour distinction
