@@ -1,0 +1,47 @@
+capabilities:
+  text-generation:
+    keywords:
+      - gpt
+      - chat
+      - instruct
+      - llama
+      - mistral
+      - mixtral
+      - command
+      - phi
+
+  image-text-to-text:
+    keywords:
+      - vision
+      - vl
+      - llava
+      - pixtral
+      - multimodal
+      - mm
+      - ocr
+      - image
+      - mistral
+
+  automatic-speech-recognition:
+    keywords:
+      - whisper
+      - asr
+
+  text-to-speech:
+    keywords:
+      - tts
+      - speech
+
+  code:
+    keywords:
+      - code
+      - codex
+      - coder
+
+  embedding:
+    keywords:
+      - embed
+
+  moderation:
+    keywords:
+      - moderation

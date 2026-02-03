@@ -1,0 +1,67 @@
+# Configuration du système RAG
+
+# Modèles API à utiliser
+models:
+  embedding_model: "BAAI/bge-m3"  # Modèle d'embedding
+  reranking_model: "BAAI/bge-reranker-v2-m3"  # Modèle de reranking
+  embedding_dimensions: null  # null = dimension par défaut du modèle
+
+# Recherche sémantique
+retrieval:
+  top_k: 40  # Nombre de documents à récupérer initialement
+  min_score: 0.1  # Score minimum de similarité
+  batch_size: 32  # Taille des batches pour l'embedding
+
+  # Extension du contexte avec chunks adjacents
+  expand_context:
+    enabled: true  # Activer l'extension du contexte
+    chunks_before: 1  # Nombre de chunks avant
+    chunks_after: 1  # Nombre de chunks après
+    merge_adjacent: true  # Fusionner les chunks en un seul texte
+
+# Reranking
+reranking:
+  top_n: 8  # Nombre de documents après reranking
+  min_rerank_score: 0.1  # Score minimum de reranking
+  batch_size: 32  # Taille des batches
+
+# Découpage de texte
+chunking:
+  chunk_size: 1000  # Taille des chunks en caractères
+  overlap: 200  # Chevauchement entre chunks
+  separators:
+    - "\n\n"
+    - "\n"
+    - ". "
+    - "! "
+    - "? "
+    - "; "
+    - " "
+
+# Contexte pour le LLM
+context:
+  max_tokens: 18000  # Budget maximum de tokens
+  max_chars_per_doc: 1800  # Caractères max par document
+  system_template: |
+    Les informations suivantes proviennent de documents internes.
+    Utilise-les exclusivement pour répondre.
+
+    {context}
+
+# Surlignage
+highlighting:
+  min_word_length: 3
+  highlight_sentences: true
+  highlight_color: "#fff3a0"
+
+# Performances
+performance:
+  use_cache: true
+  cache_size: 256
+  clear_gpu_memory: false  # Pas de GPU avec les APIs
+
+# Débogage
+debug:
+  show_message_order: true
+  show_scores: true
+  show_rag_context: true

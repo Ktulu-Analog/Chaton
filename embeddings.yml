@@ -1,0 +1,48 @@
+# Configuration des modèles d'embeddings
+
+# Modèles SentenceTransformer (locaux)
+sentence_transformers:
+  MiniLM (rapide) - 384:
+    path: models/all-MiniLM-L6-v2
+    dimension: 384
+
+  MPNet (qualité) - 768:
+    path: models/all-mpnet-base-v2
+    dimension: 768
+
+  E5-base - 768:
+    path: models/e5-base
+    dimension: 768
+
+  E5-large - 1024:
+    path: models/e5-large
+    dimension: 1024
+
+  bge-base - 768:
+    path: models/bge-base
+    dimension: 768
+
+  bge-large - 1024:
+    path: models/bge-large
+    dimension: 1024
+
+  bge-m3:
+    path: models/bge-m3
+    dimension: 1024
+
+# Modèles TEI (serveur docker local)
+tei_models:
+  multilingual-e5-large (TEI) - 1024:
+    endpoint: http://localhost:8080
+    model_name: intfloat/multilingual-e5-large
+    dimension: 1024
+
+  multilingual-e5-base (TEI) - 768:
+    endpoint: http://localhost:8081
+    model_name: intfloat/multilingual-e5-base
+    dimension: 768
+
+  multilingual-e5-small (TEI) - 384:
+    endpoint: http://localhost:8082
+    model_name: intfloat/multilingual-e5-small
+    dimension: 384

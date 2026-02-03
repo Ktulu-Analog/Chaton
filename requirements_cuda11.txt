@@ -1,0 +1,8 @@
+# PyTorch avec CUDA 11.8
+# Compatible avec la plupart des GPU NVIDIA (RTX 20xx, 30xx, 40xx, etc.)
+
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+torch==2.3.1+cu118
+torchvision==0.18.1+cu118
+torchaudio==2.3.1+cu118

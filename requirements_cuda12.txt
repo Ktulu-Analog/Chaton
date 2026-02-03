@@ -1,0 +1,6 @@
+# PyTorch avec CUDA 12.x
+# Pour GPU NVIDIA récents avec drivers CUDA 12+
+
+torch>=2.3.1
+torchvision>=0.18.1
+torchaudio>=2.3.1
