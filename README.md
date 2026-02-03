@@ -57,7 +57,7 @@ venv\Scripts\activate  # Windows
 
 **Important** : L'installation dépend de votre configuration matérielle.
 
-#### Option A : GPU NVIDIA avec CUDA 11.8 (typiquement pour architecture Pascal, non supporté par les versions de CUDA > 11.8)
+#### Option A : GPU NVIDIA avec CUDA 11.8 (typiquement pour architecture Pascal, non supportée par les versions de CUDA > 11.8)
 
 ```bash
 # Installer les dépendances de base
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 pip install -r requirements-cuda11.txt
 ```
 
-#### Option B : GPU NVIDIA avec CUDA 12.x (architecture post-Pascal)
+#### Option B : GPU NVIDIA avec CUDA 12.x (architectures post-Pascal)
 
 ```bash
 # Installer les dépendances de base
